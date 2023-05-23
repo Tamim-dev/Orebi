@@ -17,6 +17,7 @@ const Navber = () => {
                 setShow(true);
             }
         }
+        scrollWidth()
         window.addEventListener("resize", scrollWidth);
     }, []);
 
