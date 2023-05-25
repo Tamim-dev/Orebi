@@ -22,10 +22,10 @@ const Navber = () => {
   }, []);
 
   return (
-    <nav>
+    <nav className="lg:py-4">
       <Container>
         <Flex className="lg:flex">
-          <div className="lg:w-2/6">
+          <div className="self-center lg:w-[40%]">
             <Image imgsrc="assets/Logo.png" />
           </div>
           <div className="w-4/6">
