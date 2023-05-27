@@ -45,17 +45,17 @@ const Hadder = () => {
   }, []);
 
   return (
-    <div className="bg-cbg py-5">
+    <div className="bg-cbg lg:py-5">
       <Container>
         <Flex className="flex justify-between">
           <div className=" self-center">
             <Dropdwon className="relative" dropref={categoryref}>
               <p className="flex items-center gap-2.5 font-dm">
-                <RiBarChartHorizontalFill className=" lg:text-2xl" /> Shop by
-                Category
+                <RiBarChartHorizontalFill className=" lg:text-2xl" /> <span className=" hidden lg:inline-block">Shop by
+                Category</span>
               </p>
               {categoryDropDwon && (
-                <List className="absolute top-8 w-[263px] bg-cdrop font-dm font-medium text-[#BEBEBE]">
+                <List className="absolute top-8 w-[263px] bg-cdrop font-dm font-medium text-[#BEBEBE] z-[1]">
                   <ListItem
                     className="border-b border-solid border-[#2D2D2D] px-5 py-4 duration-100 ease-in hover:px-7 hover:text-white"
                     itemname="Accesories"
@@ -84,7 +84,7 @@ const Hadder = () => {
               )}
             </Dropdwon>
           </div>
-          <div className="relative w-[601px]">
+          <div className="relative lg:w-[601px]">
             <Search
               className="w-full px-5 py-4 placeholder:font-dm"
               placeholder="Search Products"
@@ -92,7 +92,7 @@ const Hadder = () => {
             <FaSearch className=" absolute right-4 top-[22px]" />
           </div>
           <div className=" self-center">
-            <Flex className="flex lg:gap-x-10">
+            <Flex className="flex lg:gap-x-10 gap-x-3">
               <div>
                 <Dropdwon className="relative" dropref={userLoginref}>
                   <div className="flex">
