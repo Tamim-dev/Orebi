@@ -13,7 +13,7 @@ import Search from "./Search";
 import Image from "./layout/Image";
 import { Link } from "react-router-dom";
 
-const Hadder = () => {
+const Header = () => {
   let [categoryDropDwon, setCategoryDropDwon] = useState(false);
   let [userLoginDropDwon, setUserLoginDropDwon] = useState(false);
   let [cartDropDwon, setCartDropDwon] = useState(false);
@@ -153,4 +153,4 @@ const Hadder = () => {
   );
 };
 
-export default Hadder;
+export default Header;

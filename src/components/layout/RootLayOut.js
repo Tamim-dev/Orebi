@@ -1,12 +1,12 @@
 import React from "react";
 import Navber from "../Navber";
-import Hadder from "../Hadder";
+import Header from "../Header";
 
 const RootLayOut = () => {
   return (
     <>
       <Navber />
-      <Hadder />
+      <Header />
     </>
   );
 };
