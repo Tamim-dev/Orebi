@@ -49,7 +49,7 @@ const Header = () => {
       <Container>
         <Flex className="flex justify-between">
           <div className=" self-center">
-            <Dropdwon className="relative" dropref={categoryref}>
+            <Dropdwon className="relative cursor-pointer" dropref={categoryref}>
               <p className="flex items-center gap-2.5 font-dm">
                 <RiBarChartHorizontalFill className=" lg:text-2xl" /> <span className=" hidden lg:inline-block">Shop by
                 Category</span>
@@ -94,7 +94,7 @@ const Header = () => {
           <div className=" self-center">
             <Flex className="flex lg:gap-x-10 gap-x-3">
               <div>
-                <Dropdwon className="relative" dropref={userLoginref}>
+                <Dropdwon className="relative z-50 cursor-pointer" dropref={userLoginref}>
                   <div className="flex">
                     <BsFillPersonFill className=" lg:text-2xl" />
                     <RxTriangleDown className=" lg:text-2xl" />
@@ -114,7 +114,7 @@ const Header = () => {
                 </Dropdwon>
               </div>
               <div className="">
-                <Dropdwon className="relative" dropref={cartref}>
+                <Dropdwon className="relative z-50 cursor-pointer" dropref={cartref}>
                   <FaShoppingCart className=" lg:text-2xl" />
                   {cartDropDwon && (
                     <div className="absolute right-0 top-8 w-[380px] border border-solid border-[#e2e2e2] bg-white drop-shadow-lg">

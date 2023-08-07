@@ -1,8 +1,9 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import Image from "./layout/Image";
 import { Link } from "react-router-dom";
+import Container from "./layout/Container";
 
 const Banner = () => {
   let [activeDot, setActiveDot] = useState(0);
@@ -55,26 +56,78 @@ const Banner = () => {
         0{i + 1}
       </div>
     ),
+
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          dots: true,
+          beforeChange: (prev, next) => {
+            setActiveDot(next);
+          },
+      
+          appendDots: (dots) => (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "2%",
+                cursor: "pointer",
+                transform: "translateY(-50%)",
+              }}
+            >
+              <ul style={{ margin: "0px" }}> {dots} </ul>
+            </div>
+          ),
+          customPaging: (i) => (
+            <div
+              style={
+                i === activeDot
+                  ? {
+                      width: "20px",
+                      color: "#262626",
+                      borderRight: "2px #262626 solid",
+                      fontSize: "12px",
+                    }
+                  : {
+                      width: "20px",
+                      color: "#262626",
+                      borderRight: "2px white solid",
+                      color: "transparent",
+                      fontSize: "12px",
+                    }
+              }
+            >
+              0{i + 1}
+            </div>
+          ),
+        }
+      },
+    ]
   };
 
   return (
+    <section className=" bg-[#F5F7F9]">
+    <Container>
     <Slider {...settings}>
       <Link to="#">
         <div>
-          <Image imgsrc="assets/banner.png" />
+          <Image imgsrc="assets/banner.png"/>
         </div>
       </Link>
       <Link to="#">
         <div>
-          <Image imgsrc="assets/banner.png" />
+          <Image imgsrc="assets/banner.png"/>
         </div>
       </Link>
       <Link to="#">
         <div>
-          <Image imgsrc="assets/banner.png" />
+          <Image imgsrc="assets/banner.png"/>
         </div>
       </Link>
     </Slider>
+    </Container>
+    </section>
   );
 };
 
