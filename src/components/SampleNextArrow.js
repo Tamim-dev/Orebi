@@ -3,7 +3,7 @@ import { RxTriangleRight } from "react-icons/rx";
 const SampleNextArrow = ({ style, onClick }) => {
   return (
     <span
-      className=" absolute top-[35%] right-[0] !flex h-16 w-16 items-center justify-center rounded-full  bg-[rgba(0,0,0,.20)]"
+      className=" absolute right-[0] top-[35%] !flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(0,0,0,.20)] sm:h-8 sm:w-8 lg:h-16  lg:w-16"
       style={{
         ...style,
       }}

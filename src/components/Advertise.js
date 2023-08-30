@@ -4,7 +4,7 @@ import Image from "./layout/Image";
 
 const Advertise = () => {
   return (
-    <section className="mt-6 xl:mt-28">
+    <section className="mt-6 xl:mt-24">
       <Container className="flex xl:gap-x-10 gap-x-2 md:gap-x-4 sm:gap-x-4">
         <div className=" w-3/6">
           <Image imgsrc="assets/Ad_1.png"/>

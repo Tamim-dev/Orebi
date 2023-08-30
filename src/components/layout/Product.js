@@ -8,7 +8,7 @@ import { BsFillCartFill } from "react-icons/bs";
 const Product = ({ imgsrc, badge, productName, productPrice,productColor }) => {
   return (
     <>
-      <div className="sm:flex-wrap lg:w-[376px] lg:h-[376px] w-[230px] h-[230px] group relative overflow-y-hidden ">
+      <div className="sm:flex-wrap tablet:max-tablet2:max-w-[220px] tablet:max-tablet2:max-h-[220px] ipad:max-ipad2:max-w-[320px] ipad:max-ipad2:max-h-[320px] lg:w-[376px] lg:h-[376px] xl:max-2xl:h-[300px] xl:max-2xl:w-[300px] w-[230px] h-[230px] group relative overflow-y-hidden ">
         <Image className="w-full h-full" imgsrc={imgsrc} />
         {badge && <Badge title="New" />}
         <div className="absolute lg:bottom-[-44%] bottom-[-60%] w-full bg-white p-6 duration-300 ease-in-out group-hover:bottom-0 ">
@@ -33,10 +33,10 @@ const Product = ({ imgsrc, badge, productName, productPrice,productColor }) => {
         </div>
       </div>
       <div className="flex mt-6 lg:mb-5 mb-2">
-        <h3 className=" font-dm font-bold lg:text-xl text-cdrop lg:mr-24 mr-4">{productName}</h3>
-        <p className=" font-dm lg:text-lg text-cGrey">{productPrice}</p>
+        <h3 className=" font-dm font-bold lg:text-xl text-cdrop lg:mr-24 mr-4 tablet:max-tablet2:text-[14px] ipad:max-ipad2:text-[16px] xl:max-2xl:mr-10">{productName}</h3>
+        <p className=" font-dm lg:text-lg text-cGrey ipad:max-ipad2:text-[16px] tablet:max-tablet2:text-[14px]">{productPrice}</p>
       </div>
-      <p className=" font-dm lg:text-lg text-cGrey">{productColor}</p>
+      <p className=" mb-2 font-dm lg:text-lg text-cGrey tablet:max-tablet2:text-[14px]">{productColor}</p>
     </>
   );
 };

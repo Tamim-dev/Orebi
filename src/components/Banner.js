@@ -26,7 +26,7 @@ const Banner = () => {
         style={{
           position: "absolute",
           top: "50%",
-          left: "4%",
+          left: "0",
           cursor: "pointer",
           transform: "translateY(-50%)",
         }}
@@ -71,7 +71,7 @@ const Banner = () => {
               style={{
                 position: "absolute",
                 top: "50%",
-                left: "2%",
+                left: "0",
                 cursor: "pointer",
                 transform: "translateY(-50%)",
               }}
