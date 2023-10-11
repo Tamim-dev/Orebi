@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import Container from "./layout/Container";
-import Flex from "./layout/Flex";
 import { RiBarChartHorizontalFill } from "react-icons/ri";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -47,7 +46,7 @@ const Header = () => {
   return (
     <div className="bg-cbg lg:py-5">
       <Container>
-        <Flex className="flex justify-between">
+        <div className="flex justify-between">
           <div className=" self-center">
             <Dropdwon className="relative cursor-pointer" dropref={categoryref}>
               <p className="flex items-center gap-2.5 font-dm">
@@ -92,7 +91,7 @@ const Header = () => {
             <FaSearch className=" absolute right-4 top-[22px]" />
           </div>
           <div className=" self-center">
-            <Flex className="flex lg:gap-x-10 gap-x-3">
+            <div className="flex lg:gap-x-10 gap-x-3">
               <div>
                 <Dropdwon className="relative z-50 cursor-pointer" dropref={userLoginref}>
                   <div className="flex">
@@ -145,9 +144,9 @@ const Header = () => {
                   )}
                 </Dropdwon>
               </div>
-            </Flex>
+            </div>
           </div>
-        </Flex>
+        </div>
       </Container>
     </div>
   );

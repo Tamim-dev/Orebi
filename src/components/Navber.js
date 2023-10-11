@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Container from "./layout/Container";
-import Flex from "./layout/Flex";
 import Image from "./layout/Image";
 import List from "./layout/List";
 import ListItem from "./layout/ListItem";
@@ -24,7 +23,7 @@ const Navber = () => {
   return (
     <nav className="lg:py-4">
       <Container>
-        <Flex className="lg:flex">
+        <div className="lg:flex">
           <div className="self-center lg:w-[40%]">
             <Image imgsrc="assets/Logo.png" />
           </div>
@@ -40,6 +39,7 @@ const Navber = () => {
                   itemname="Home"
                 />
                 <ListItem
+                  href="/shop"
                   className="my-2.5 hover:text-black lg:my-0"
                   itemname="Shop"
                 />
@@ -58,7 +58,7 @@ const Navber = () => {
               </List>
             )}
           </div>
-        </Flex>
+        </div>
       </Container>
     </nav>
   );
