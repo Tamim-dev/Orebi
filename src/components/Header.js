@@ -136,7 +136,7 @@ const Header = () => {
                           <Link className=" border border-solid border-cdrop bg-cdrop px-10 py-4 font-bold text-white duration-300 ease-in hover:bg-white hover:text-black">
                             View Cart
                           </Link>
-                          <Link className=" border border-solid border-cdrop bg-cdrop px-10 py-4 font-bold text-white duration-300 ease-in hover:bg-white hover:text-black">
+                          <Link className=" border border-solid border-cdrop bg-cdrop px-9 py-4 font-bold text-white duration-300 ease-in hover:bg-white hover:text-black">
                             Checkout
                           </Link>
                         </div>
