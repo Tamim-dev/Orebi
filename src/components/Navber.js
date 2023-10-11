@@ -44,6 +44,7 @@ const Navber = () => {
                   itemname="Shop"
                 />
                 <ListItem
+                  href="/about"
                   className="my-2.5 hover:text-black lg:my-0"
                   itemname="About"
                 />

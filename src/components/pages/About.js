@@ -2,12 +2,14 @@ import React from "react";
 import Container from "../../components/layout/Container";
 import PageHeading from "../layout/PageHeading";
 
-const Shop = () => {
+const About = () => {
   return (
     <section>
-      <Container><PageHeading tilte="Products"/></Container>
+      <Container>
+        <PageHeading tilte="About" />
+      </Container>
     </section>
   );
 };
 
-export default Shop;
+export default About;
