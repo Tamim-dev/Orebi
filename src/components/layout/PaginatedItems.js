@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import Product from "./Product";
 
-// Example items, to simulate fetching from another resources.
 const items = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-  11, 12, 13, 14
+  11, 12, 13, 14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1, 2, 3, 4, 5,
+  6, 7, 8, 9, 10, 11, 12, 13, 14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+  11, 12, 13, 14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 11, 12, 13, 14,
+  7, 8, 9, 10, 11, 12, 13, 14,1
 ];
 
 function Items({ currentItems }) {
@@ -28,51 +31,38 @@ function Items({ currentItems }) {
 }
 
 const PaginatedItems = ({ itemsPerPage }) => {
-  // Here we use item offsets; we could also use page offsets
-  // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);
-
-  // Simulate fetching items from another resources.
-  // (This could be items from props; or items loaded in a local state
-  // from an API endpoint with useEffect and useState)
   const endOffset = itemOffset + itemsPerPage;
-  console.log(`Loading items from ${itemOffset} to ${endOffset}`);
   const currentItems = items.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(items.length / itemsPerPage);
 
-  // Invoke when user click to request another page.
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
     setItemOffset(newOffset);
   };
 
   return (
     <>
-      <div className=" flex flex-wrap justify-between">
+      <div className=" flex flex-wrap gap-x-3.5">
         <Items currentItems={currentItems} />
       </div>
       <ReactPaginate
         breakLabel="..."
-        nextLabel=""
+        breakClassName="flex items-end font-bold text-lg"
+        breakLinkClassName="page-link"
         onPageChange={handlePageClick}
-        pageRangeDisplayed={5}
+        pageRangeDisplayed={4}
         pageCount={pageCount}
-        previousLabel=""
-        pageClassName="page-item"
-        pageLinkClassName="page-link"
-        previousClassName="page-item"
-        previousLinkClassName="page-link"
-        nextClassName="page-item"
-        nextLinkClassName="page-link"
-        breakClassName="page-item"
-        breakLinkClassName="inline-block border border-sloid border-[#F0F0F0] py-2 px-3.5"
-        containerClassName=" flex gap-x-3.5"
-        activeClassName="active"
+        pageClassName=" border border-solid border-[#f0f0f0] py-2 px-3.5 font-dm text-lg"
+        previousClassName="hidden"
+        nextClassName="hidden"
+        containerClassName=" flex gap-x-5 mt-12"
+        activeClassName=" border border-sloid border-[#F0F0F0] py-2 px-3.5 font-dm text-lg bg-black text-white"
         renderOnZeroPageCount={null}
       />
+      <p className=" absolute bottom-0 right-0 font-dm text-base text-cGrey">
+        Products from {itemOffset} to {endOffset} of {items.length}
+      </p>
     </>
   );
 };

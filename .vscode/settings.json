@@ -1,0 +1,11 @@
+{
+  "editor.fontSize": 18,
+  "editor.tabSize": 4,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.cursorStyle": "line",
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Default Dark Modern",
+  "workbench.preferredHighContrastLightColorTheme": "Default Dark Modern"
+}

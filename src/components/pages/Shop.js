@@ -10,9 +10,11 @@ const Shop = () => {
       <Container>
         <PageHeading tilte="Products" />
 
-        <div className="flex gap-x-10 mt-24">
-        <div className="w-[25%] bg-red-600">fdfd</div>
-        <div className="w-[75%]"><PaginatedItems itemsPerPage={12} />,</div>
+        <div className="mt-24 flex gap-x-10">
+          <div className="w-[25%] bg-red-600">fdfd</div>
+          <div className="w-[75%] relative">
+            <PaginatedItems itemsPerPage={12} />
+          </div>
         </div>
       </Container>
     </section>
