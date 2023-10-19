@@ -4,7 +4,7 @@ import {TfiAngleDoubleRight} from "react-icons/tfi"
 
 const PageHeading = ({ tilte }) => {
   return (
-    <div className=" mt-24">
+    <div className="lg:mt-24 mt-10">
       <h1 className="font-dm text-5xl font-bold text-cdrop">{tilte}</h1>
       <p className="font-dm text-sm mt-3 text-cGrey flex items-center gap-x-2">
         <Link to="/">Home</Link> <TfiAngleDoubleRight/>

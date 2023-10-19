@@ -16,7 +16,7 @@ function Items({ currentItems }) {
     <>
       {currentItems &&
         currentItems.map((item) => (
-          <div className="w-[32.5%]">
+          <div className="lg:w-[32.5%]">
             <Product
               imgsrc="assets/product_2.png"
               badge={true}
@@ -43,7 +43,7 @@ const PaginatedItems = ({ itemsPerPage }) => {
 
   return (
     <>
-      <div className=" flex flex-wrap gap-x-3.5">
+      <div className=" flex flex-wrap gap-x-3.5 gap-y-3.5 justify-between">
         <Items currentItems={currentItems} />
       </div>
       <ReactPaginate
@@ -56,11 +56,11 @@ const PaginatedItems = ({ itemsPerPage }) => {
         pageClassName=" border border-solid border-[#f0f0f0] py-2 px-3.5 font-dm text-lg"
         previousClassName="hidden"
         nextClassName="hidden"
-        containerClassName=" flex gap-x-5 mt-12"
+        containerClassName=" flex flex-wrap gap-y-3.5 gap-x-5 mt-12"
         activeClassName=" border border-sloid border-[#F0F0F0] py-2 px-3.5 font-dm text-lg bg-black text-white"
         renderOnZeroPageCount={null}
       />
-      <p className=" absolute bottom-0 right-0 font-dm text-base text-cGrey">
+      <p className=" lg:absolute bottom-0 mt-3 right-0 font-dm text-base text-cGrey">
         Products from {itemOffset} to {endOffset} of {items.length}
       </p>
     </>

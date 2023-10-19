@@ -10,7 +10,7 @@ const Shop = () => {
       <Container>
         <PageHeading tilte="Products" />
 
-        <div className="mt-24 flex gap-x-10">
+        <div className="lg:mt-24 mt-10 flex gap-x-3 lg:gap-x-10">
           <div className="w-[25%] bg-red-600">fdfd</div>
           <div className="w-[75%] relative">
             <PaginatedItems itemsPerPage={12} />
