@@ -21,7 +21,7 @@ module.exports = {
         iphone7: "450px",
         ipad:"1024px",
         ipad2:"1050px",
-        lastDevice:"375px",
+        lastDevice:"350px",
       },
     },
     plugins: [],

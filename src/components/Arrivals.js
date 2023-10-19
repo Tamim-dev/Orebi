@@ -26,7 +26,7 @@ const Arrivals = () => {
       {
         breakpoint: 1025,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2
         }
@@ -58,7 +58,7 @@ const Arrivals = () => {
       {
         breakpoint: 685,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2
         }
