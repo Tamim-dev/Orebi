@@ -3,12 +3,12 @@ import Leftsidebarheading from "./Leftsidebarheading";
 
 const Leftsidebar = () => {
   return (
-    <div>
-      <Leftsidebarheading lsbheading="Shop by Category"/>
-      <Leftsidebarheading lsbheading="Shop by Color"/>
-      <Leftsidebarheading lsbheading="Shop by Brand"/>
-      <Leftsidebarheading lsbheading="Shop by Price"/>
-    </div>
+    <>
+      <Leftsidebarheading dropdown={false}/>
+      <Leftsidebarheading dropdown={true}/>
+      <Leftsidebarheading dropdown={true}/>
+      <Leftsidebarheading dropdown={false}/>
+    </>
   );
 };
 
