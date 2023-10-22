@@ -1,37 +1,29 @@
 import React from "react";
 import { useState } from "react";
-import { BiPlus,BiMinus } from "react-icons/bi";
+import { BiPlus, BiMinus } from "react-icons/bi";
 
-const Leftsidebaritem = ({subcategory}) => {
-  let [drop, setDrop] = useState(subcategory);
+const Leftsidebaritem = (props) => {
+  let [drop, setDrop] = useState(props.subcategory);
   let [showicon, setShowicon] = useState(false);
   return (
     <div>
       {drop ? (
         <div
           onClick={() => setShowicon(!showicon)}
-          className=" flex cursor-pointer items-center justify-between"
+          className=" flex cursor-pointer items-center justify-between border-b border-solid border-[#F0F0F0]"
         >
-          <h2>
-            Category 1
-          </h2>
-          {showicon ? <BiMinus /> : <BiPlus/>}
+          <h2 className=" font-dm text-cGrey mb-5 ">{props.title}</h2>
+          {showicon ? (
+            <BiMinus className="text-cGrey mb-5" />
+          ) : (
+            <BiPlus className="text-cGrey mb-5" />
+          )}
         </div>
       ) : (
-        <h2>
-          Category 1
-        </h2>
+        <h2 className=" font-dm text-cGrey mb-5">{props.title}</h2>
       )}
 
-      {showicon && (
-        <div>
-          <p>dfdsfds</p>
-          <p>dfdsfds</p>
-          <p>dfdsfds</p>
-          <p>dfdsfds</p>
-          <p>dfdsfds</p>
-        </div>
-      )}
+      {showicon && <div>{props.children}</div>}
     </div>
   );
 };
