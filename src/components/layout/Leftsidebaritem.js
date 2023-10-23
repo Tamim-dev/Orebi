@@ -10,17 +10,25 @@ const Leftsidebaritem = (props) => {
       {drop ? (
         <div
           onClick={() => setShowicon(!showicon)}
-          className=" flex cursor-pointer items-center justify-between border-b border-solid border-[#F0F0F0]"
+          className=" mt-5 flex cursor-pointer items-center justify-between border-b border-solid border-[#F0F0F0]"
         >
-          <h2 className=" font-dm text-cGrey mb-5 ">{props.title}</h2>
+          <h2 className=" mb-5 font-dm text-cGrey ">
+            {props.color && (
+              <span
+                className=" mr-3 inline-block h-3 w-3 rounded-full"
+                style={{ background: props.color }}
+              ></span>
+            )}
+            {props.title}
+          </h2>
           {showicon ? (
-            <BiMinus className="text-cGrey mb-5" />
+            <BiMinus className="mb-5 text-cGrey" />
           ) : (
-            <BiPlus className="text-cGrey mb-5" />
+            <BiPlus className="mb-5 text-cGrey" />
           )}
         </div>
       ) : (
-        <h2 className=" font-dm text-cGrey mb-5">{props.title}</h2>
+        <h2 className=" mb-5 font-dm text-cGrey">{props.title}</h2>
       )}
 
       {showicon && <div>{props.children}</div>}
