@@ -3,7 +3,7 @@ import { useState } from "react";
 import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
 import Leftsidebaritem from "./Leftsidebaritem";
 
-const Leftsidebarheading = ({ dropdown, droptilte }) => {
+const Leftsidebarheading = ({ dropdown, droptilte, data }) => {
   let [drop, setDrop] = useState(dropdown);
   let [showicon, setShowicon] = useState(dropdown);
 
@@ -30,95 +30,35 @@ const Leftsidebarheading = ({ dropdown, droptilte }) => {
           </h2>
         </div>
       )}
+
       {showicon && (
         <>
-          <Leftsidebaritem subcategory={true} title="Category 1" color="black">
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
-          <Leftsidebaritem
-            subcategory={true}
-            title="Category 2"
-            color="#FF8686"
-          >
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
-          <Leftsidebaritem
-            subcategory={true}
-            title="Category 3"
-            color="#7ED321"
-          >
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
-          <Leftsidebaritem
-            subcategory={true}
-            title="Category 4"
-            color="#B6B6B6"
-          >
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
-          <Leftsidebaritem
-            subcategory={true}
-            title="Category 5"
-            color="#15CBA5"
-          >
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
+          {data.map((item) => (
+            <Leftsidebaritem
+              subcategory={item.subcategory ? true : false}
+              title={item.name}
+            ></Leftsidebaritem>
+          ))}
         </>
       )}
 
       {!drop && (
         <>
-          <Leftsidebaritem subcategory={true} title="Category 1" color="black">
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
-          <Leftsidebaritem
-            subcategory={true}
-            title="Category 2"
-            color="#FF8686"
-          >
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
-          <Leftsidebaritem
-            subcategory={true}
-            title="Category 3"
-            color="#7ED321"
-          >
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
-          <Leftsidebaritem
-            subcategory={true}
-            title="Category 4"
-            color="#B6B6B6"
-          >
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
-          <Leftsidebaritem
-            subcategory={true}
-            title="Category 5"
-            color="#15CBA5"
-          >
-            <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
-              Item 1
-            </h2>
-          </Leftsidebaritem>
+          {data.map((item) => (
+            <>
+              <Leftsidebaritem
+                subcategory={item.subcategory ? true : false}
+                title={item.name}
+              >
+                {item.subcategory &&
+                  item.subcategory.map((sitem) => (
+                    <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
+                      {sitem.name}
+                    </h2>
+                  ))}
+              </Leftsidebaritem>
+            </>
+          ))}
         </>
       )}
     </div>
