@@ -34,9 +34,16 @@ const Leftsidebarheading = ({ dropdown, droptilte, data }) => {
       {showicon && (
         <>
           {data.map((item) => (
+            item.subcategory?
             <Leftsidebaritem
               subcategory={item.subcategory ? true : false}
               title={item.name}
+            ></Leftsidebaritem>
+             :
+            <Leftsidebaritem
+              subcategory={item.subcategory ? true : false}
+              title={item.name}
+              color={item.code}
             ></Leftsidebaritem>
           ))}
         </>
@@ -45,7 +52,20 @@ const Leftsidebarheading = ({ dropdown, droptilte, data }) => {
       {!drop && (
         <>
           {data.map((item) => (
-            <>
+            item.subcategory?
+            <Leftsidebaritem
+                subcategory={true}
+                title={item.name}
+              >
+                {item.subcategory &&
+                  item.subcategory.map((sitem) => (
+                    <h2 className="border-b border-solid border-[#F0F0F0] py-5 font-dm text-cGrey">
+                      {sitem.name}
+                    </h2>
+                  ))}
+              </Leftsidebaritem>
+            :
+              
               <Leftsidebaritem
                 subcategory={item.subcategory ? true : false}
                 title={item.name}
@@ -57,7 +77,8 @@ const Leftsidebarheading = ({ dropdown, droptilte, data }) => {
                     </h2>
                   ))}
               </Leftsidebaritem>
-            </>
+              
+            
           ))}
         </>
       )}

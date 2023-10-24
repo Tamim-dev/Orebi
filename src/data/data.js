@@ -52,19 +52,24 @@ let category = [
 
 let color = [
   {
-    name: "black",
+    name: "Coler 1",
+    code:"black"
   },
   {
-    name: "white",
+    name: "Coler 2",
+    code:"green"
   },
   {
-    name: "blue",
+    name: "Coler 3",
+    code:"blue"
   },
   {
-    name: "red",
+    name: "Coler 4",
+    code:"red"
   },
   {
-    name: "yellow",
+    name: "Coler 5",
+    code:"yellow"
   },
 ];
 
