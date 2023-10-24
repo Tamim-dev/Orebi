@@ -13,13 +13,13 @@ const Shop = () => {
       <Container>
         <PageHeading tilte="Products" />
         <div className="mt-10 flex gap-x-3 lg:mt-24 lg:gap-x-10">
-          <div className="w-[25%]"><Leftsidebar/></div>
-          <div className="relative w-[75%]">
-            <div className="mb-14 flex items-center justify-end gap-x-4">
-              <p className="font-dm text-lg text-cGrey ">Sort by:</p>
+          <div className="w-[25%] hidden sm:block"><Leftsidebar/></div>
+          <div className="relative w-full sm:w-[75%]">
+            <div className="lg:mb-14 mb-10 flex items-center md:justify-end gap-x-4">
+              <p className="font-dm lg:text-lg text-cGrey ">Sort by:</p>
               <select
                 id="countries"
-                class="block w-60 border border-[#F0F0F0] px-6 py-3 font-dm text-lg font-medium text-[#6D6D6D] focus:border-cGrey"
+                class="block w-32 lg:w-60 border border-[#F0F0F0] lg:px-6 px-3 py-3 font-dm lg:text-lg font-medium text-[#6D6D6D] focus:border-cGrey"
               >
                 <option selected>Featured</option>
                 <option
@@ -50,13 +50,13 @@ const Shop = () => {
               <p className="font-dm text-lg text-cGrey">Show:</p>
               <select
                 id="countries"
-                class="block w-60 border border-[#F0F0F0] px-6 py-3 font-dm text-lg font-medium text-[#6D6D6D] focus:border-cGrey"
+                class="block lg:w-60 w-32 border border-[#F0F0F0] lg:px-6 px-3 py-3 font-dm lg:text-lg font-medium text-[#6D6D6D] focus:border-cGrey"
                 onChange={(e) => setProductShow(+e.target.value)}
               >
                 <option selected>12</option>
                 <option
                   value="24"
-                  className="font-dm text-lg font-medium text-[#6D6D6D]"
+                  className="font-dm lg:text-lg font-medium text-[#6D6D6D]"
                 >
                   24
                 </option>

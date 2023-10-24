@@ -24,52 +24,34 @@ const Arrivals = () => {
         }
       },
       {
-        breakpoint: 1025,
+        breakpoint: 1023,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2
         }
       },
       {
-        breakpoint: 880,
+        breakpoint: 610,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          initialSlide: 2
+          slidesToShow: 2,
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 734,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 685,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 414,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
-      }
+      },
+      {
+        breakpoint: 428,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
     ]
   };
 
