@@ -11,7 +11,7 @@ const Product = ({ imgsrc, badge, productName, productPrice,productColor }) => {
       <div className=" group relative overflow-y-hidden">
         <Image className="w-full h-full" imgsrc={imgsrc} />
         {badge && <Badge title="New" />}
-        <div className="absolute lg:bottom-[-44%] bottom-[-60%] w-full bg-white p-6 duration-300 ease-in-out group-hover:bottom-0 ">
+        <div className="absolute ipad:bottom-[-44%] bottom-[-60%] w-full bg-red-500 p-6 duration-300 ease-in-out group-hover:bottom-0 ">
           <div className="flex cursor-pointer items-center justify-end gap-x-4">
             <p className=" font-dm text-base text-cGrey hover:text-cdrop">
               Add to Wish List
@@ -32,9 +32,9 @@ const Product = ({ imgsrc, badge, productName, productPrice,productColor }) => {
           </div>
         </div>
       </div>
-      <div className="flex mt-6 lg:mb-5 mb-2">
-        <h3 className=" font-dm font-bold lg:text-xl text-cdrop lg:mr-24 mr-4 tablet:max-tablet2:text-[14px] ipad:max-ipad2:text-[16px] xl:max-2xl:mr-10">{productName}</h3>
-        <p className=" font-dm lg:text-lg text-cGrey ipad:max-ipad2:text-[16px] tablet:max-tablet2:text-[14px]">{productPrice}</p>
+      <div className="flex mt-6 lg:mb-5 mb-2 justify-between">
+        <h3 className=" font-dm font-bold ipad:text-xl text-cdrop tablet:max-tablet2:text-[14px] ipad:max-ipad2:text-base xl:max-2xl:mr-10">{productName}</h3>
+        <p className=" font-dm lg:text-lg text-cGrey ipad:max-ipad2:text-base tablet:max-tablet2:text-[14px]">{productPrice}</p>
       </div>
       <p className=" mb-2 font-dm lg:text-lg text-cGrey tablet:max-tablet2:text-[14px]">{productColor}</p>
     </>

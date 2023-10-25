@@ -63,7 +63,7 @@ const Arrivals = () => {
         </div>
         <div>
           <Slider {...settings}>
-            <div className="lg:!w-[380px]">
+            <div className="ipad:!w-[370px] lg:!w-[310px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px]">
               <Product
                 imgsrc="assets/product_1.png"
                 badge={true}
@@ -72,7 +72,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div className="lg:!w-[380px]">
+            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
               <Product
                 imgsrc="assets/product_2.png"
                 badge={true}
@@ -81,7 +81,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div className="lg:!w-[380px]">
+            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
               <Product
                 imgsrc="assets/product_3.png"
                 badge={true}
@@ -90,7 +90,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div className="lg:!w-[380px]">
+            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
               <Product
                 imgsrc="assets/product_4.png"
                 badge={true}
@@ -99,7 +99,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div className="lg:!w-[380px]">
+            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
               <Product
                 imgsrc="assets/product_5.png"
                 badge={true}

@@ -19,7 +19,7 @@ module.exports = {
         tablet2: "750px",
         iphone6: "412px",
         iphone7: "450px",
-        ipad:"1024px",
+        ipad:"1025px",
         ipad2:"1050px",
         lastDevice:"350px",
       },

@@ -11,7 +11,7 @@ const Specialoffers = () => {
               <Heading title="Special Offers" />
             </div>
             <div className="flex justify-between flex-wrap">
-                <div>
+                <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
                   <Product
                     imgsrc="assets/product_9.png"
                     badge={true}
@@ -20,7 +20,7 @@ const Specialoffers = () => {
                     productColor="Black"
                   />
                 </div>
-                <div>
+                <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
                   <Product
                     imgsrc="assets/product_8.png"
                     badge={true}
@@ -29,7 +29,7 @@ const Specialoffers = () => {
                     productColor="Black"
                   />
                 </div>
-                <div>
+                <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
                   <Product
                     imgsrc="assets/product_3.png"
                     badge={true}
@@ -38,7 +38,7 @@ const Specialoffers = () => {
                     productColor="Black"
                   />
                 </div>
-                <div>
+                <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
                   <Product
                     imgsrc="assets/product_5.png"
                     badge={true}
