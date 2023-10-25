@@ -61,9 +61,9 @@ const Arrivals = () => {
         <div className=" lg:mb-12 mb-5">
           <Heading title="New Arrivals" />
         </div>
-        <div >
+        <div>
           <Slider {...settings}>
-            <div>
+            <div className="lg:!w-[380px]">
               <Product
                 imgsrc="assets/product_1.png"
                 badge={true}
@@ -72,7 +72,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div>
+            <div className="lg:!w-[380px]">
               <Product
                 imgsrc="assets/product_2.png"
                 badge={true}
@@ -81,7 +81,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div>
+            <div className="lg:!w-[380px]">
               <Product
                 imgsrc="assets/product_3.png"
                 badge={true}
@@ -90,7 +90,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div>
+            <div className="lg:!w-[380px]">
               <Product
                 imgsrc="assets/product_4.png"
                 badge={true}
@@ -99,7 +99,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div>
+            <div className="lg:!w-[380px]">
               <Product
                 imgsrc="assets/product_5.png"
                 badge={true}

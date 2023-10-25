@@ -8,7 +8,7 @@ import { BsFillCartFill } from "react-icons/bs";
 const Product = ({ imgsrc, badge, productName, productPrice,productColor }) => {
   return (
     <>
-      <div className="sm:flex-wrap xl:max-w-[380px] lg:max-ipad2:max-w-[320px] tablet:max-w-[340px] sm:max-md:max-w-[285px] lastDevice:max-w-[285px] group relative overflow-y-hidden ">
+      <div className=" group relative overflow-y-hidden">
         <Image className="w-full h-full" imgsrc={imgsrc} />
         {badge && <Badge title="New" />}
         <div className="absolute lg:bottom-[-44%] bottom-[-60%] w-full bg-white p-6 duration-300 ease-in-out group-hover:bottom-0 ">
