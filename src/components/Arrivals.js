@@ -16,7 +16,7 @@ const Arrivals = () => {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 1279,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -61,9 +61,9 @@ const Arrivals = () => {
         <div className=" lg:mb-12 mb-5">
           <Heading title="New Arrivals" />
         </div>
-        <div>
+        <div className="sm:pl-5">
           <Slider {...settings}>
-            <div className="ipad:!w-[370px] lg:!w-[310px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px]">
+            <div className="ipad:!w-[95%] lg:!w-[95%] sm:!w-[95%] tablet:!w-[95%] tablet2:!w-[95%]">
               <Product
                 imgsrc="assets/product_1.png"
                 badge={true}
@@ -72,7 +72,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
+            <div className="ipad:!w-[95%] sm:!w-[95%] tablet:!w-[95%] tablet2:!w-[95%] lg:!w-[95%]">
               <Product
                 imgsrc="assets/product_2.png"
                 badge={true}
@@ -81,7 +81,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
+            <div className="ipad:!w-[95%] sm:!w-[95%] tablet:!w-[95%] tablet2:!w-[95%] lg:!w-[95%]">
               <Product
                 imgsrc="assets/product_3.png"
                 badge={true}
@@ -90,7 +90,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
+            <div className="ipad:!w-[95%] sm:!w-[95%] tablet:!w-[95%] tablet2:!w-[95%] lg:!w-[95%]">
               <Product
                 imgsrc="assets/product_4.png"
                 badge={true}
@@ -99,7 +99,7 @@ const Arrivals = () => {
                 productColor="Black"
               />
             </div>
-            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
+            <div className="ipad:!w-[95%] sm:!w-[95%] tablet:!w-[95%] tablet2:!w-[95%] lg:!w-[95%]">
               <Product
                 imgsrc="assets/product_5.png"
                 badge={true}

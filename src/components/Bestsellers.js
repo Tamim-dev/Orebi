@@ -11,7 +11,7 @@ const Bestsellers = () => {
           <Heading title="Our Bestsellers" />
         </div>
         <div className="flex justify-between flex-wrap">
-            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
+            <div className="xl:!w-[24%] sm:!w-[48%] tablet:!w-[48%]  lg:!w-[32%] lastDevice:!w-full">
               <Product
                 imgsrc="assets/product_5.png"
                 badge={true}
@@ -20,7 +20,7 @@ const Bestsellers = () => {
                 productColor="Black"
               />
             </div>
-            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
+            <div className="xl:!w-[24%] sm:!w-[48%] tablet:!w-[48%]  lg:!w-[32%] lastDevice:!w-full">
               <Product
                 imgsrc="assets/product_6.png"
                 badge={true}
@@ -29,7 +29,7 @@ const Bestsellers = () => {
                 productColor="Black"
               />
             </div>
-            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
+            <div className="xl:!w-[24%] sm:!w-[48%] tablet:!w-[48%]  lg:!w-[32%] lastDevice:!w-full">
               <Product
                 imgsrc="assets/product_7.png"
                 badge={true}
@@ -38,7 +38,7 @@ const Bestsellers = () => {
                 productColor="Black"
               />
             </div>
-            <div className="ipad:!w-[370px] sm:!w-[300px] tablet:!w-[315px] tablet2:!w-[335px] lg:!w-[310px]">
+            <div className="xl:!w-[24%] sm:!w-[48%] tablet:!w-[48%]  lg:!w-[32%] lastDevice:!w-full">
               <Product
                 imgsrc="assets/product_8.png"
                 badge={true}
