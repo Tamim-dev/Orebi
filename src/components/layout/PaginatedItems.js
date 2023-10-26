@@ -16,7 +16,7 @@ function Items({ currentItems }) {
     <>
       {currentItems &&
         currentItems.map((item) => (
-          <div className="xl:w-[32.5%] sm:w-[48%]">
+          <div className="xl:w-[32.5%] sm:w-[48%] lastDevice:w-full">
             <Product
               imgsrc="assets/product_2.png"
               badge={true}
