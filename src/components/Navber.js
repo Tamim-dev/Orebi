@@ -30,7 +30,7 @@ const Navber = () => {
           <div className="w-4/6">
             <FaBars
               onClick={() => setShow(!show)}
-              className="absolute right-2 top-2 ml-auto block lg:hidden"
+              className="absolute right-2 top-2 ml-auto block lg:hidden cursor-pointer"
             />
             {show && (
               <List className="lg;font-medium mt-10 text-cGrey lg:mt-0 lg:flex lg:gap-12 lg:font-dm lg:text-lg">

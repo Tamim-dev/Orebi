@@ -26,7 +26,7 @@ const Shop = () => {
   return (
     <section>
       <Container>
-        <PageHeading tilte="Products" />
+        <PageHeading/>
         <div className="mt-10 flex gap-x-3 lastDevice:relative lg:mt-24 lg:gap-x-10">
           {show && <div className="sm:w-[25%] sm:relative lastDevice:absolute top-0 left-0 z-50 lastDevice:bg-slate-100 sm:bg-transparent lastDevice:p-4 sm:p-0 lastDevice:w-3/4"><AiOutlineCloseCircle className="cursor-pointer text-3xl text-cdrop sm:hidden absolute right-5" onClick={() => setShow(!show)}/> <Leftsidebar/></div>}
           <div className="relative w-full sm:w-[75%]">
