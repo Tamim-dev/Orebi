@@ -36,7 +36,7 @@ const Footer = () => {
               />
               <ListItem
                 className="font-regular mt-[6px] font-dm text-sm text-[#6D6D6D]"
-                itemname="Journal1"
+                itemname="Journal"
                 href="#"
               />
             </List>
