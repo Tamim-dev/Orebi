@@ -8,7 +8,7 @@ const Leftsidebarheading = ({ dropdown, droptilte, data }) => {
   let [showicon, setShowicon] = useState(dropdown);
 
   return (
-    <div className="mb-5 lg:mb-12">
+    <div className="mb-5 lg:mb-12 ">
       {drop ? (
         <div
           onClick={() => setShowicon(!showicon)}

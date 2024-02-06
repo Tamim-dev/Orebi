@@ -16,7 +16,7 @@ function Items({ currentItems }) {
     <>
       {currentItems &&
         currentItems.map((item) => (
-          <div className="xl:w-[32.5%] sm:w-[48%] lastDevice:w-full">
+          <div className="xl:w-[32%] sm:w-[48%] w-full">
             <Product
               imgsrc="assets/product_2.png"
               badge={true}
@@ -43,7 +43,7 @@ const PaginatedItems = ({ itemsPerPage }) => {
 
   return (
     <>
-      <div className=" flex flex-wrap gap-x-3.5 gap-y-3.5 justify-between">
+      <div className=" flex flex-wrap gap-y-3.5 justify-between">
         <Items currentItems={currentItems} />
       </div>
       <ReactPaginate

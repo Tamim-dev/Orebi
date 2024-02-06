@@ -33,7 +33,7 @@ const Navber = () => {
               className="absolute right-2 top-2 ml-auto block cursor-pointer lg:hidden"
             />
             {show && (
-              <List className="lg;font-medium mt-10 text-cGrey lg:mt-0 lg:flex lg:gap-12 lg:font-dm lg:text-lg">
+              <List className="lg:font-medium mt-10 text-cGrey lg:mt-0 lg:flex lg:gap-12 lg:font-dm lg:text-lg">
                 <ListItem
                   className="my-2.5 hover:text-black lg:my-0"
                   itemname="Home"
@@ -52,10 +52,6 @@ const Navber = () => {
                   href="/contact"
                   className="my-2.5 hover:text-black lg:my-0"
                   itemname="Contacts"
-                />
-                <ListItem
-                  className="my-2.5 hover:text-black lg:my-0"
-                  itemname="Journal"
                 />
               </List>
             )}
